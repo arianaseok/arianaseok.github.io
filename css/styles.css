@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +10,7 @@
 
 body {
     margin-left: 80px;
+    margin-top: 80px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
@@ -122,5 +123,49 @@ a.seleccionada {
     position: absolute;
     top: 10%;
     left: -30px;
+}
+
+main {
+    padding: 25px 0px;
+}
+
+.presentacion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.presentacion img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+}
+
+.presentacion h1 {
+    font-family: 'PT Serif Caption', serif;
+    padding: 10px;
+}
+
+.profesion {
+    font-style: italic;
+    padding: 5px;
+    margin: 10px;
+}
+
+.descripcion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion span {
+    width: 700px;
+    padding: 20px;
+    margin: 5px;
+    font-weight: 100;
 }
 
