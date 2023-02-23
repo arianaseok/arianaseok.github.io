@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/13b276ac21.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
+
     <header>
         <div class="barra-menu">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="btn_abierto"></i>
         </div>
     </header>
 
-    <div class="menu-lado">
+    <div class="menu-lado" id="menu_lado">
         <div class="nombre-pagina">
             <i class="fa-solid fa-users"></i>
             <h4>April</h4>
@@ -62,11 +63,54 @@
 
     <main>
         <div class="contacto">
-            <h3>Contacto</h3>
-            <p>Correo: April.rice@gmail.com</p>
-            <p>Telefono: (359) 459-5954</p>
-            <p>Calle: Hillcrest 2186 , Buenos Aires</p>
+
+            <div class="datos">
+                <h2>Contacto</h2>
+                <p>Correo: April.rice@gmail.com</p>
+                <p>Telefono: (359) 459-5954</p>
+                <p>Calle: Hillcrest 2186 , Buenos Aires</p>
+
+            </div>
+            <br>
+
+            
+            <div class="formulario">
+                <h3>Enviame un mensaje</h3> 
+                <form action="#" method="get">
+                    <div class="nombres">
+                        <label for="nombre">
+                            <span>Nombres:</span>
+                            <input type="text" id="nombre" name="nombre">
+                        </label>
+                    </div>
+
+                    <div class="celular">
+                        <label for="celular">
+                            <span>Celular:</span>
+                            <input type="text" id="celular" name="celular">
+                        </label>
+                    </div>
+
+                    <div class="correo">
+                        <label for="correo">
+                            <span>Correo:</span>
+                            <input type="email" id="correo" name="correo">
+                        </label>
+                    </div>
+
+                    <div class="mensaje">
+                        <label for="mensaje">
+                            <span>Mensaje:</span>
+                        </label>
+                        <textarea></textarea>
+                    </div>
+
+                    <input type="submit" class="boton" value="Enviar">
+
+                </form>
+            </div>
         </div>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>
