@@ -30,3 +30,13 @@ window.addEventListener("resize", function() {
         menu_lado.classList.add("menu_lado_movimiento");
     }
     })
+
+//Añado evento para cambiar fondo
+
+document.getElementById('btn_color').addEventListener('click', function() {
+    document.body.style.backgroundColor = '#F5F6FF';
+})
+
+document.getElementById('boton_default').addEventListener('click', function() {
+    document.body.style.backgroundColor = 'white';
+})

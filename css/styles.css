@@ -11,6 +11,7 @@
 body {
     margin-left: 80px;
     margin-top: 80px;
+    background-color: white;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
@@ -132,6 +133,7 @@ main {
 
 .presentacion {
     width: 100%;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,6 +462,30 @@ label span {
 .boton:hover {
     opacity: 0.75;
 }
+
+
+/*Personalizamos los botones para cambiar fondo*/
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px;
+}
+
+.btn button{
+    background-color: #027585;
+    color: white;
+    font-weight: 500;
+    font-size: 11pt;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 /*Aca añadimos unas caracteristicas para el javascript*/
 
